@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://MeshLibrary.tres" type="MeshLibrary" id=1]
+[ext_resource path="res://Pawns/Player/Player.tscn" type="PackedScene" id=2]
+
+[node name="LevelBase" type="Spatial"]
+
+[node name="GridMap" type="GridMap" parent="."]
+mesh_library = ExtResource( 1 )
+data = {
+"cells": PoolIntArray(  )
+}
+__meta__ = {
+"_editor_clip_": 0
+}
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
